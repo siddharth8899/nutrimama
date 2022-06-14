@@ -7,11 +7,10 @@ import Container from '@mui/material/Container';
 import AdbIcon from '@mui/icons-material/Adb';
 import './Nutrimama.css';
 import Routing from './Routing';
-import { IconButton, Menu, MenuItem } from '@mui/material';
+import { IconButton, Menu } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
-  const pages = ['About Us', 'Products', 'Contact Us'];
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
