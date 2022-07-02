@@ -20,7 +20,7 @@ const Routing = ({ onClose }) => {
 
             <Button sx={{ my: 2, color: 'white', display: 'block' }} className='menuItem' onClick={onClose}>
                 <Typography textAlign="center">
-                    <Link style={{ textDecoration: 'none' }} to="/contact">contact</Link>
+                    <Link style={{ textDecoration: 'none' }} to="/contact">contact us</Link>
                 </Typography>
             </Button>
         </>

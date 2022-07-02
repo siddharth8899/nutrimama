@@ -42,9 +42,6 @@ const Header = () => {
           >
             NUTRIMAMA
           </Typography>
-
-
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -77,9 +74,6 @@ const Header = () => {
               <Routing onClose={handleCloseNavMenu}/>
             </Menu>
           </Box>
-
-
-
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
@@ -99,7 +93,6 @@ const Header = () => {
           >
             NUTRIMAMA
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} style={{ justifyContent: 'flex-end' }}>
             <Routing />
           </Box>
