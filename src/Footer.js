@@ -9,8 +9,6 @@ const Footer = () => {
       <div className='logo'>
         <img src={img} alt='logo' height='50px' width='100%' />
       </div>
-
-
     </div>
   )
 }

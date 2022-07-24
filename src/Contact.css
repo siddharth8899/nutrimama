@@ -1,0 +1,72 @@
+.contact-us-box{
+    margin: 20px 5px;
+    padding: 50px;
+    text-align: left;
+}
+
+.contact-us-box svg{
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.cntct-us{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.call{
+    padding: 20px 0;   
+}
+
+.copy{
+    color: green;
+    margin-left: 50px;
+}
+.copy-id{
+    color: green;
+    text-align: center;
+}
+.smlnks a { 
+    color: inherit;
+} 
+
+.smlnks span{
+    padding: 20px 0;
+}
+
+.phn{
+    color: #1180FF;
+}
+
+.wa {
+    color: #25D366;
+}
+
+.fb{
+    color: #4267B2;
+}
+
+.insta{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 5px;
+}
+
+.twtr{
+    color: 	#1DA1F2;
+}
+
+.yt{
+    color: 	#FF0000;
+}
+
+.smlnks{
+    display: flex;
+    flex-direction: column;
+}
+
+.smlnks a {
+    text-decoration: none;
+}

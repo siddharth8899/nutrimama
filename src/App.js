@@ -2,7 +2,6 @@ import About from './About';
 import './App.css';
 import Contact from './Contact';
 import Header from './Header';
-import Footer from './Footer';
 import {
   Routes,
   Route,
@@ -21,7 +20,6 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/pageNotFound" element={<PageNotFound />} />
       </Routes>
-      <Footer />
     </div>
   );
 }
