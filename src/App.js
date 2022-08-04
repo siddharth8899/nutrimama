@@ -8,18 +8,25 @@ import {
 } from "react-router-dom";
 import Products from './Products';
 import PageNotFound from './PageNotFound';
+import TempDrawer from './Drawer';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Routes>
+      {/* <Header />
+      <TempDrawer /> */}
+
+      <About />
+      <Products />
+      <Contact />
+
+      {/* <Routes>
         <Route exact path="/" element={<App />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/products" element={<Products />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/pageNotFound" element={<PageNotFound />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

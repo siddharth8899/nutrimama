@@ -6,9 +6,9 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import AdbIcon from '@mui/icons-material/Adb';
 import './Nutrimama.css';
-import Routing from './Routing';
 import { IconButton, Menu } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import TempDrawer from './Drawer';
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -24,7 +24,7 @@ const Header = () => {
     <AppBar position="static" className='hdr'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -53,7 +53,7 @@ const Header = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Menu
+            {/* <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -70,9 +70,9 @@ const Header = () => {
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
-            >
-              <Routing onClose={handleCloseNavMenu}/>
-            </Menu>
+            > */}
+              <TempDrawer anchorElNav={anchorElNav} onClose={handleCloseNavMenu}/>
+            {/* </Menu> */}
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
@@ -94,7 +94,7 @@ const Header = () => {
             NUTRIMAMA
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} style={{ justifyContent: 'flex-end' }}>
-            <Routing />
+          <TempDrawer anchorElNav={anchorElNav}/>
           </Box>
         </Toolbar>
       </Container>
