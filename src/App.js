@@ -13,9 +13,7 @@ import TempDrawer from './Drawer';
 function App() {
   return (
     <div className="App">
-      {/* <Header />
-      <TempDrawer /> */}
-
+      <TempDrawer /> 
       <About />
       <Products />
       <Contact />

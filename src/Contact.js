@@ -9,6 +9,7 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import './Contact.css';
+import { Divider } from '@mui/material';
 
 const Contact = () => {
   const [cpyNo, setCpyNo] = useState(false);
@@ -44,7 +45,7 @@ const Contact = () => {
     
     <div className='smlnks'>
     
-    <span><WhatsAppIcon className='wa'/><a href='https://api.whatsapp.com/send/?phone=91729097311' target={'_blank'} rel="noreferrer">Chat with us on Whatsapp</a></span>
+    <span><WhatsAppIcon className='wa'/><a href='https://api.whatsapp.com/send/?phone=91729097311' target={'_blank'} rel="noreferrer">Click to Chat with us</a></span>
     
     <span onClick={copyID}><EmailIcon className='mail'/>
       <span >
@@ -55,7 +56,11 @@ const Contact = () => {
         }
       </span>
     </span>
+    </div>
+    </Paper>
 
+    <Paper elevation={3} className='contact-us-box'>
+    <div className='smlnks'>
     <span><FacebookIcon className='fb'/><a href='https://www.facebook.com/nutrimama.india/' target={'_blank'} rel="noreferrer">nutrimama.india</a></span>
     <span><InstagramIcon className='insta'/><a href='https://www.instagram.com/nutrimama_india/' target={'_blank'} rel="noreferrer">nutrimama_india</a></span>
     <span><TwitterIcon className='twtr'/><a href='https://twitter.com/nutrimama_india' target={'_blank'} rel="noreferrer">nutrimama_india</a></span>

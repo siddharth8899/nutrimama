@@ -2,11 +2,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Routing from './Routing';
-import { Typography } from '@mui/material';
-import AdbIcon from '@mui/icons-material/Adb';
+import MenuIcon from '@mui/icons-material/Menu';
 
-export default function TempDrawer(open) {
-    const [state, setState] = React.useState(open);
+export default function TempDrawer() {
+    const [state, setState] = React.useState(false);
 
     const toggleDrawer = (open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -17,28 +16,7 @@ export default function TempDrawer(open) {
 
     return (
         <div>
-            <React.Fragment>
-
-            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            NUTRIMAMA
-          </Typography>
-
-
+                <MenuIcon onClick={toggleDrawer(true)} />
                 <Drawer
                     anchor={'left'}
                     open={state}
@@ -53,8 +31,6 @@ export default function TempDrawer(open) {
                         <Routing />
                     </Box>
                 </Drawer>
-            </React.Fragment>
-            {/* ))} */}
         </div>
     );
 }
