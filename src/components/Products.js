@@ -13,7 +13,7 @@ const Products = () => {
         <CUICarousel>
           {
             paperData.map(e => {
-              return <CuiCard name={e.name} length={e.length} thickness={e.thickness} imgs={e.img} />
+              return <CuiCard name={e.name} length={e.length} thickness={e.thickness} imgs={e.img} key={e.id}/>
             })
           }
         </CUICarousel>
@@ -21,7 +21,7 @@ const Products = () => {
         <CUICarousel>
           {
             foilData.map(e => {
-              return <CuiCard name={e.name} length={e.length} thickness={e.thickness} imgs={e.img} />
+              return <CuiCard name={e.name} length={e.length} thickness={e.thickness} imgs={e.img} key={e.id}/>
             })
           }
         </CUICarousel>

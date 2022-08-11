@@ -9,7 +9,6 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import '../css/Contact.css';
-import { Divider } from '@mui/material';
 
 const Contact = () => {
   const [cpyNo, setCpyNo] = useState(false);
