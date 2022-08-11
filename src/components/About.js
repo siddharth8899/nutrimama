@@ -1,14 +1,11 @@
 import React from 'react'
-import img from './nutrimama.png';
-import './About.css'; 
+import img from '../assets/logo/nutrimama.png';
+import '../css/About.css'; 
 
 const About = () => {
     return (
         <div>
-            <div className='logo'>
-            <img src={img} alt='logo' height='100px' width='100%' />
-            </div>
-
+            <h2>ABOUT US</h2>
             <div className='abt'>
                 <div>Nutrimama is an alternative to Aluminium and Plastic wrap and provides a nutritious way to wrap your food
                 maintaining the freshness and keeping you healthy.</div>
