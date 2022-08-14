@@ -44,7 +44,7 @@ const Contact = () => {
     
     <div className='smlnks'>
     
-    <span><WhatsAppIcon className='wa'/><a href='https://api.whatsapp.com/send/?phone=91729097311' target={'_blank'} rel="noreferrer">Click to Chat with us</a></span>
+    <span><WhatsAppIcon className='wa'/><a href='https://api.whatsapp.com/send/?phone=917290973115' target={'_blank'} rel="noreferrer">Click to Chat with us</a></span>
     
     <span onClick={copyID}><EmailIcon className='mail'/>
       <span >
