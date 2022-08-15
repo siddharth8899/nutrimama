@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Routing from './Routing';
 import MenuIcon from '@mui/icons-material/Menu';
-import img from '../assets/logo/nutrimama.png';
+import img from '../assets/logo/logo.png';
 import '../css/Nutrimama.css';
 
 export default function TempDrawer() {
