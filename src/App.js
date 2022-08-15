@@ -9,11 +9,13 @@ import Products from './components/Products';
 import PageNotFound from './components/PageNotFound';
 import TempDrawer from './components/Drawer';
 import Home from './components/Home';
+import Header from './components/Header';
+import {isMobile} from 'react-device-detect';
 
 function App() {
   return (
     <div className="App">
-      <TempDrawer /> 
+      {isMobile ? <TempDrawer />  : <Header /> }
       <Routes>
         <Route exact path="/about" element={<About />} />
         <Route exact path="/products" element={<Products />} />

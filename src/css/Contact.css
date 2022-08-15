@@ -1,43 +1,45 @@
-.contact-us-box{
+.contact-us-box {
     margin: 20px 5px;
     padding: 50px;
     text-align: left;
 }
 
-.contact-us-box svg{
+.contact-us-box svg {
     margin-right: 10px;
     position: relative;
     top: 5px;
 }
 
-.cntct-us{
+.cntct-us {
     font-size: 50px;
     text-align: center;
     font-weight: 600;
     margin: 100px 0px 40px 0px;
 }
 
-.call{
-    padding: 20px 0;   
-}
-
-.copy{
-    color: green;
-    margin-left: 50px;
-}
-.copy-id{
-    color: green;
-    text-align: center;
-}
-.smlnks a { 
-    color: inherit;
-} 
-
-.smlnks span{
+.call {
     padding: 20px 0;
 }
 
-.phn{
+.copy {
+    color: green;
+    margin-left: 50px;
+}
+
+.copy-id {
+    color: green;
+    text-align: center;
+}
+
+.smlnks a {
+    color: inherit;
+}
+
+.smlnks span {
+    padding: 20px 0;
+}
+
+.phn {
     color: #1180FF;
 }
 
@@ -45,28 +47,39 @@
     color: #25D366;
 }
 
-.fb{
+.fb {
     color: #4267B2;
 }
 
-.insta{
+.insta {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 5px;
 }
 
-.twtr{
-    color: 	#1DA1F2;
+.twtr {
+    color: #1DA1F2;
 }
 
-.yt{
-    color: 	#FF0000;
+.yt {
+    color: #FF0000;
 }
 
-.smlnks{
+.smlnks {
     display: flex;
     flex-direction: column;
 }
 
 .smlnks a {
     text-decoration: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .contact-us-box {
+        width: 50%;
+    }
+    .ppr-bx {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
 }

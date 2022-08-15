@@ -8,8 +8,8 @@ import CUICarousel from './CUICarousel';
 const Products = () => {
   return (
     <div className='prodBox'>
-      <div className='products'>Products
-        <div className='product'> Nutrimama Butter Paper  </div>
+      <div className='products'>Our Products
+        <div className='product'> Nutrimama Food Wrapping Paper  </div>
         <CUICarousel>
           {
             paperData.map(e => {
