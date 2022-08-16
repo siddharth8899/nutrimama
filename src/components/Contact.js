@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Paper from '@mui/material/Paper';
 import CallIcon from '@mui/icons-material/Call';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -9,6 +9,7 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import '../css/Contact.css';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const [cpyNo, setCpyNo] = useState(false);
@@ -29,9 +30,17 @@ const Contact = () => {
     }, 3000);
   };
 
+  useEffect(() => {
+    window.scrollTo(0,0)
+   }, [])
+
   return (
     <>
-      <div className='cntct-us'>Contact Us</div>
+      <div className='cntct-us'>
+        <Link style={{ textDecoration: 'none', color: '#21a0e3' }} to="/contact">
+          Contact Us
+        </Link>
+      </div>
       <div className='ppr-bx'>
         <Paper elevation={3} className='contact-us-box'>
 

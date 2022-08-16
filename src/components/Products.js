@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/products.css';
 import CuiCard from './Card';
 import { paperData } from '../prodData/paperData';
 import { foilData } from '../prodData/foilData';
 import CUICarousel from './CUICarousel';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
+
+  useEffect(() => {
+   window.scrollTo(0,0)
+  }, [])
+  
+
   return (
     <div className='prodBox'>
-      <div className='products'>Our Products
+      <div className='products'><Link style={{ textDecoration: 'none', color: '#21a0e3' }} to="/products">Our Products</Link>
         <div className='product'> Nutrimama Food Wrapping Paper  </div>
         <CUICarousel>
           {

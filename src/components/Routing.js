@@ -9,25 +9,25 @@ const Routing = ({ onClose }) => {
         <>
          <Button sx={{ my: 2, color: 'white', display: 'block' }} className='menuItem' onClick={onClose}>
                 <Typography textAlign="center">
-                    <Link style={{ textDecoration: 'none' }} to="/">Home</Link>
+                    <Link style={{ textDecoration: 'none' }} className='lnk' to="/">Home</Link>
                 </Typography>
             </Button>
 
             <Button sx={{ my: 2, color: 'white', display: 'block' }} className='menuItem' onClick={onClose}>
                 <Typography textAlign="center">
-                    <Link style={{ textDecoration: 'none' }} to="/about">About Us</Link>
+                    <Link style={{ textDecoration: 'none' }} className='lnk' to="/about">About Us</Link>
                 </Typography>
             </Button>
 
             <Button sx={{ my: 2, color: 'white', display: 'block' }} className='menuItem' onClick={onClose}>
                 <Typography textAlign="center">
-                    <Link style={{ textDecoration: 'none' }} to="/products">Our Products</Link>
+                    <Link style={{ textDecoration: 'none' }} className='lnk' to="/products">Our Products</Link>
                 </Typography>
             </Button>
 
             <Button sx={{ my: 2, color: 'white', display: 'block' }} className='menuItem' onClick={onClose}>
                 <Typography textAlign="center">
-                    <Link style={{ textDecoration: 'none' }} to="/contact">Contact us</Link>
+                    <Link style={{ textDecoration: 'none' }} className='lnk' to="/contact">Contact us</Link>
                 </Typography>
             </Button>
         </>

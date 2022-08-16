@@ -1,15 +1,20 @@
 import React from 'react'
 import '../css/About.css'; 
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
         <div>
-            <div className='abt-us'>ABOUT US</div>
+            <div className='abt-us'> <Link style={{ textDecoration: 'none', color: '#21a0e3' }} to="/about">ABOUT US</Link></div>
             <div className='abt'>
-                <div>Nutrimama is an alternative to Aluminium and Plastic wrap and provides a nutritious way to wrap your food
+                <div>Nutrimama provides affordable food wrapping solutions.</div>
+                <div> We are the Leading manufactureres of Aluminium foil
+                    and food wrapping paper.
+                </div>
+                <div>Nutrimama is an alternative to Plastic wrap and provides a nutritious way to wrap your food
                 maintaining the freshness and keeping you healthy.</div>
 
-                <div>We are leaders in manufacturing greaseproof foodgrade paper that is free of all kinds of
+                <div>We are manufacture greaseproof foodgrade paper that is free of all kinds of
                 chemicals and chlorine.</div>
 
                 <div>Our paper is biodegradable, recyclable and can be composited easily.</div>

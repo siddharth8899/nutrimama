@@ -5,6 +5,7 @@ import Routing from './Routing';
 import MenuIcon from '@mui/icons-material/Menu';
 import img from '../assets/logo/logo.png';
 import '../css/Nutrimama.css';
+import { Link } from 'react-router-dom';
 
 export default function TempDrawer() {
     const [state, setState] = React.useState(false);
@@ -19,10 +20,12 @@ export default function TempDrawer() {
     return (
         <div>
             <div className='hdr'>
-            <MenuIcon onClick={toggleDrawer(true)} />
-            <div className='logo'>
-                <img src={img} alt='logo' height='100px' width='100%' />
-            </div>
+                <MenuIcon onClick={toggleDrawer(true)} />
+                <div className='logo'>
+                    <Link style={{ textDecoration: 'none' }} to="/">
+                        <img src={img} alt='logo' height='100px' width='100%' />
+                    </Link>
+                </div>
             </div>
             <Drawer
                 anchor={'left'}

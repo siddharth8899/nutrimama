@@ -33,6 +33,12 @@
   color: #61dafb;
 }
 
+.lnk {
+    color: #21a0e3;
+    font-weight: 700;
+    font-size: larger;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
